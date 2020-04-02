@@ -1,14 +1,20 @@
 import React from "react";
 import './styles.css'
+import Timer from "../Timer";
 
 class GetInput extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            datetime:"12/12/1212",
+
             divList: [
                 <div>Hello there</div>,
                 <div className={"all-el"}>
-                    <input className="datetimepicker" type="datetime-local" onChange=""/>
+                    <input className="datetimepicker" type="datetime-local" onChange={(newDateEvent)=>{
+                        this.setState({ datetime:newDateEvent.target.value});
+                    }}/>
+
                     <button className={"add-rem-btn"}
                             onClick={() => this.onBtnPress()}
                     >
@@ -16,13 +22,17 @@ class GetInput extends React.Component {
                     </button>
                 </div>
             ],
+
         }
     }
 
     onBtnPress() {
         let divListCopy = [].concat(this.state.divList);
         divListCopy.push(
-            <div className={"rem"}>Reminder Added</div>
+            <div className={"rem"}>Reminder Added <div>
+                <div>{this.state.datetime}</div>
+            </div></div>
+
         );
         return (
             this.setState({
