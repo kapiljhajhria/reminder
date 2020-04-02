@@ -6,9 +6,11 @@ class Timer extends React.Component {
 
     render() {
         return (
-            <button className="button-square" onClick={() => this.props.squarePressed()}>
-                {this.props.value}
-            </button>
+            <div>This is from Timer
+            <div>
+                {this.props.dateTime}
+            </div>
+            </div>
         );
     }
 }

@@ -29,7 +29,8 @@ class GetInput extends React.Component {
     onBtnPress() {
         let divListCopy = [].concat(this.state.divList);
         divListCopy.push(
-            <div className={"rem"}>Reminder Added <div>
+            <div className={"rem"}><div>
+                <Timer dateTime={this.state.dateTime}></Timer>
                 <div>{this.state.datetime}</div>
             </div></div>
 
