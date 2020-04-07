@@ -9,7 +9,7 @@ class GetInput extends React.Component {
             datetime:"12/12/1212",
 
             divList: [
-                <div>Hello there</div>,
+
                 <div className={"all-el"}>
                     <input className="datetimepicker" type="datetime-local" onChange={(newDateEvent)=>{
                         this.setState({ datetime:newDateEvent.target.value});
@@ -30,8 +30,7 @@ class GetInput extends React.Component {
         let divListCopy = [].concat(this.state.divList);
         divListCopy.push(
             <div className={"rem"}><div>
-                <Timer dateTime={this.state.dateTime}></Timer>
-                <div>{this.state.datetime}</div>
+                <Timer dateTime={this.state.datetime}/>
             </div></div>
 
         );
