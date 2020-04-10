@@ -20,7 +20,14 @@ class GetInput extends React.Component {
                     >
                         Add Reminder
                     </button>
+                </div>,
+                <div>
+                    1st
+                </div>,
+                <div>
+                    2nd
                 </div>
+
             ],
 
         }
@@ -30,7 +37,7 @@ class GetInput extends React.Component {
         let divListCopy = [].concat(this.state.divList);
         divListCopy.push(
             <div className={"rem"}><div>
-                <Timer dateTime={this.state.datetime}/>
+                <Timer key={(this.state.datetime)} dateTime={this.state.datetime} listIndex={this.state.divList.length} removeElementFromList={(index)=>this.removeElementFromList(index)}/>
             </div></div>
 
         );
@@ -42,6 +49,13 @@ class GetInput extends React.Component {
         );
 
 
+    }
+    removeElementFromList(index){
+        let copyList=[].concat(this.state.divList);
+        copyList.splice(index,1);
+        this.setState({
+            divList:copyList,
+        })
     }
 
 

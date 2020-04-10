@@ -7,7 +7,8 @@ class Timer extends React.Component {
         super(props);
         this.state = {
             fromTime:this.props.dateTime,
-            countdown: 'Starting Timer'
+            countdown: 'Starting Timer',
+            index:this.props.listIndex,
         }
     }
 
@@ -23,7 +24,16 @@ class Timer extends React.Component {
             let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             let minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
             let seconds = Math.floor((t % (1000 * 60)) / 1000);
-
+            if(days<0&&hours<0&&minutes<0&&seconds<0){
+                if (typeof this.props.removeElementFromList === 'function') {
+                    this.props.removeElementFromList(this.state.index);
+                }
+                this.setState({
+                    countdown:"",
+                });
+                clearInterval(x);
+                return;
+            }
             this.setState({
                 countdown:days + "d "
                     + hours + "h " + minutes + "m " + seconds + "s ",
@@ -33,6 +43,12 @@ class Timer extends React.Component {
     }
     componentDidMount(){
         this.startTimer(this.state.fromTime);
+    }
+
+    callParentFunction(e){
+        if (typeof this.props.onChange === 'function') {
+            this.props.onChange(e.target.value);
+        }
     }
 
     render() {
