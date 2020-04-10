@@ -28,9 +28,6 @@ class Timer extends React.Component {
                 if (typeof this.props.removeElementFromList === 'function') {
                     this.props.removeElementFromList(this.state.index);
                 }
-                this.setState({
-                    countdown:"",
-                });
                 clearInterval(x);
                 return;
             }

@@ -21,12 +21,6 @@ class GetInput extends React.Component {
                         Add Reminder
                     </button>
                 </div>,
-                <div>
-                    1st
-                </div>,
-                <div>
-                    2nd
-                </div>
 
             ],
 
