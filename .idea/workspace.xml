@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3d3884c-1125-4bec-90d2-4403831a2d92" name="Default Changelist" comment="">
+    <list default="true" id="d3d3884c-1125-4bec-90d2-4403831a2d92" name="Default Changelist" comment="getting ready for deployment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -95,7 +95,7 @@
       <workItem from="1586252244002" duration="294000" />
       <workItem from="1586253247591" duration="3885000" />
       <workItem from="1586531507103" duration="2108000" />
-      <workItem from="1586573119205" duration="393000" />
+      <workItem from="1586573119205" duration="720000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1585813153675</created>
@@ -146,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586532894370</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="getting ready for deployment">
+      <created>1586573644920</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586573644920</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +167,8 @@
     <MESSAGE value="project completed&#10;&#10;&#10;fit and finish remaining" />
     <MESSAGE value="working timer" />
     <MESSAGE value="Completed. Timer Gets deleted on ending" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed. Timer Gets deleted on ending" />
+    <MESSAGE value="getting ready for deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="getting ready for deployment" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1063" y="297" key="#Web_Browsers" timestamp="1586531556010">
@@ -172,11 +180,11 @@
     </state>
     <state x="733" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1035@0.0.1920.1035" timestamp="1585815572522" />
     <state x="733" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1586531571480" />
-    <state x="781" y="56" key="CommitChangelistDialog2" timestamp="1586532894320">
+    <state x="781" y="56" key="CommitChangelistDialog2" timestamp="1586573653828">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="939" y="91" key="CommitChangelistDialog2/0.0.1920.1035@0.0.1920.1035" timestamp="1585824691748" />
-    <state x="781" y="56" key="CommitChangelistDialog2/0.0.1920.1044@0.0.1920.1044" timestamp="1586532894320" />
+    <state x="781" y="56" key="CommitChangelistDialog2/0.0.1920.1044@0.0.1920.1044" timestamp="1586573653828" />
     <state x="1131" y="276" key="EnvironmentVariablesDialog" timestamp="1586531569543">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
@@ -255,11 +263,11 @@
     </state>
     <state x="350" y="105" key="SettingsEditor/0.0.1920.1035@0.0.1920.1035" timestamp="1585823399444" />
     <state x="350" y="106" width="1007" height="732" key="SettingsEditor/0.0.1920.1044@0.0.1920.1044" timestamp="1586573308224" />
-    <state x="753" y="257" key="Vcs.Push.Dialog.v2" timestamp="1586532895775">
+    <state x="753" y="257" key="Vcs.Push.Dialog.v2" timestamp="1586573657231">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="753" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1035@0.0.1920.1035" timestamp="1585824693480" />
-    <state x="753" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1044@0.0.1920.1044" timestamp="1586532895775" />
+    <state x="753" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1044@0.0.1920.1044" timestamp="1586573657231" />
     <state x="993" y="328" key="jetbrains.nodejs.interpreters-dialog" timestamp="1585815113777">
       <screen x="0" y="0" width="1920" height="1035" />
     </state>
