@@ -1,48 +1,50 @@
 import React from "react";
 import './styles.css'
 
-
 class Timer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            fromTime:this.props.dateTime,
+            fromTime: this.props.dateTime,
             countdown: 'Starting Timer',
-            index:this.props.listIndex,
+            index: this.props.listIndex,
         }
     }
 
     startTimer(stringTime) {
 
-        console.log('string is :'+stringTime);
+        console.log('string is :' + stringTime);
         let deadline = new Date(stringTime).getTime();
 
-        let x = setInterval(() =>{
+        let x = setInterval(() => {
             let now = new Date().getTime();
             let t = deadline - now;
             let days = Math.floor(t / (1000 * 60 * 60 * 24));
             let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             let minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
             let seconds = Math.floor((t % (1000 * 60)) / 1000);
-            if(days<0&&hours<0&&minutes<0&&seconds<0){
+            if (days < 0 && hours < 0 && minutes < 0 && seconds < 0) {
+
                 if (typeof this.props.removeElementFromList === 'function') {
                     this.props.removeElementFromList(this.state.index);
                 }
+                alert('Timer Completed, Its '+new Date(stringTime).toLocaleTimeString()+" now");
                 clearInterval(x);
                 return;
             }
             this.setState({
-                countdown:days + "d "
+                countdown: days + "d "
                     + hours + "h " + minutes + "m " + seconds + "s ",
             });
 
         }, 1000);
     }
-    componentDidMount(){
+
+    componentDidMount() {
         this.startTimer(this.state.fromTime);
     }
 
-    callParentFunction(e){
+    callParentFunction(e) {
         if (typeof this.props.onChange === 'function') {
             this.props.onChange(e.target.value);
         }
@@ -57,4 +59,4 @@ class Timer extends React.Component {
     }
 }
 
-export default Timer;
+export default (Timer);
