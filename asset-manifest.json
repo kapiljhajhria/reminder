@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/reminder/static/css/main.fd08d510.chunk.css",
-    "main.js": "/reminder/static/js/main.f6dac4eb.chunk.js",
-    "main.js.map": "/reminder/static/js/main.f6dac4eb.chunk.js.map",
+    "main.js": "/reminder/static/js/main.2ff1c2f7.chunk.js",
+    "main.js.map": "/reminder/static/js/main.2ff1c2f7.chunk.js.map",
     "runtime-main.js": "/reminder/static/js/runtime-main.bf90f5a3.js",
     "runtime-main.js.map": "/reminder/static/js/runtime-main.bf90f5a3.js.map",
     "static/js/2.85dc6b53.chunk.js": "/reminder/static/js/2.85dc6b53.chunk.js",
     "static/js/2.85dc6b53.chunk.js.map": "/reminder/static/js/2.85dc6b53.chunk.js.map",
     "index.html": "/reminder/index.html",
-    "precache-manifest.2a98e4f3e52769fd9193c1b6f22bb91c.js": "/reminder/precache-manifest.2a98e4f3e52769fd9193c1b6f22bb91c.js",
+    "precache-manifest.4720b49f8b3f9662e05ef1a31b371615.js": "/reminder/precache-manifest.4720b49f8b3f9662e05ef1a31b371615.js",
     "service-worker.js": "/reminder/service-worker.js",
     "static/css/main.fd08d510.chunk.css.map": "/reminder/static/css/main.fd08d510.chunk.css.map",
     "static/js/2.85dc6b53.chunk.js.LICENSE.txt": "/reminder/static/js/2.85dc6b53.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.bf90f5a3.js",
     "static/js/2.85dc6b53.chunk.js",
     "static/css/main.fd08d510.chunk.css",
-    "static/js/main.f6dac4eb.chunk.js"
+    "static/js/main.2ff1c2f7.chunk.js"
   ]
 }
