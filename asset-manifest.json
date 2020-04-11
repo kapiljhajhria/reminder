@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/kapiljhajhria/reminder/static/css/main.fd08d510.chunk.css",
-    "main.js": "/kapiljhajhria/reminder/static/js/main.b43e8f70.chunk.js",
-    "main.js.map": "/kapiljhajhria/reminder/static/js/main.b43e8f70.chunk.js.map",
-    "runtime-main.js": "/kapiljhajhria/reminder/static/js/runtime-main.d7a2bb3c.js",
-    "runtime-main.js.map": "/kapiljhajhria/reminder/static/js/runtime-main.d7a2bb3c.js.map",
-    "static/js/2.85dc6b53.chunk.js": "/kapiljhajhria/reminder/static/js/2.85dc6b53.chunk.js",
-    "static/js/2.85dc6b53.chunk.js.map": "/kapiljhajhria/reminder/static/js/2.85dc6b53.chunk.js.map",
-    "index.html": "/kapiljhajhria/reminder/index.html",
-    "precache-manifest.5ff1270f6bcc5be2b36f1551ac8034b4.js": "/kapiljhajhria/reminder/precache-manifest.5ff1270f6bcc5be2b36f1551ac8034b4.js",
-    "service-worker.js": "/kapiljhajhria/reminder/service-worker.js",
-    "static/css/main.fd08d510.chunk.css.map": "/kapiljhajhria/reminder/static/css/main.fd08d510.chunk.css.map",
-    "static/js/2.85dc6b53.chunk.js.LICENSE.txt": "/kapiljhajhria/reminder/static/js/2.85dc6b53.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/kapiljhajhria/reminder/static/media/logo.5d5d9eef.svg"
+    "main.css": "/reminder/static/css/main.fd08d510.chunk.css",
+    "main.js": "/reminder/static/js/main.f6dac4eb.chunk.js",
+    "main.js.map": "/reminder/static/js/main.f6dac4eb.chunk.js.map",
+    "runtime-main.js": "/reminder/static/js/runtime-main.bf90f5a3.js",
+    "runtime-main.js.map": "/reminder/static/js/runtime-main.bf90f5a3.js.map",
+    "static/js/2.85dc6b53.chunk.js": "/reminder/static/js/2.85dc6b53.chunk.js",
+    "static/js/2.85dc6b53.chunk.js.map": "/reminder/static/js/2.85dc6b53.chunk.js.map",
+    "index.html": "/reminder/index.html",
+    "precache-manifest.2a98e4f3e52769fd9193c1b6f22bb91c.js": "/reminder/precache-manifest.2a98e4f3e52769fd9193c1b6f22bb91c.js",
+    "service-worker.js": "/reminder/service-worker.js",
+    "static/css/main.fd08d510.chunk.css.map": "/reminder/static/css/main.fd08d510.chunk.css.map",
+    "static/js/2.85dc6b53.chunk.js.LICENSE.txt": "/reminder/static/js/2.85dc6b53.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/reminder/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d7a2bb3c.js",
+    "static/js/runtime-main.bf90f5a3.js",
     "static/js/2.85dc6b53.chunk.js",
     "static/css/main.fd08d510.chunk.css",
-    "static/js/main.b43e8f70.chunk.js"
+    "static/js/main.f6dac4eb.chunk.js"
   ]
 }
