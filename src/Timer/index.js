@@ -7,7 +7,7 @@ class Timer extends React.Component {
         this.state = {
             fromTime: this.props.dateTime,
             countdown: 'Starting Timer',
-            index: this.props.listIndex,
+
         }
     }
 
@@ -24,12 +24,11 @@ class Timer extends React.Component {
             let minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
             let seconds = Math.floor((t % (1000 * 60)) / 1000);
             if (days < 0 && hours < 0 && minutes < 0 && seconds < 0) {
-
+                console.log("timer ended")
                 if (typeof this.props.removeElementFromList === 'function') {
-                    this.props.removeElementFromList(this.state.index);
+                    this.props.removeElementFromList();
                 }
-                alert('Timer Completed, Its '+new Date(stringTime).toLocaleTimeString()+" now");
-                clearInterval(x);
+            clearInterval(x);
                 return;
             }
             this.setState({
