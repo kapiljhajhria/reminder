@@ -11,7 +11,7 @@ class Timer extends React.Component {
         }
     }
 
-    async startTimer (stringTime)  {
+    startTimer (stringTime)  {
 
         console.log('string is :' + stringTime);
         let deadline = new Date(stringTime).getTime();
