@@ -11,7 +11,7 @@ class Timer extends React.Component {
         }
     }
 
-    startTimer(stringTime) {
+    async startTimer (stringTime)  {
 
         console.log('string is :' + stringTime);
         let deadline = new Date(stringTime).getTime();
@@ -27,7 +27,7 @@ class Timer extends React.Component {
                 console.log("timer ended")
                 clearInterval(x);
                 this.props.removeElementFromList();
-                return;
+                return alert('Timer Completed, Its ' + new Date(Date.now()).toLocaleTimeString() + " now");
             }
             this.setState({
                 countdown: days + "d "
