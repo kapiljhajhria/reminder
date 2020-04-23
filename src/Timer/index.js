@@ -25,10 +25,8 @@ class Timer extends React.Component {
             let seconds = Math.floor((t % (1000 * 60)) / 1000);
             if (days < 0 && hours < 0 && minutes < 0 && seconds < 0) {
                 console.log("timer ended")
-                if (typeof this.props.removeElementFromList === 'function') {
-                    this.props.removeElementFromList();
-                }
-            clearInterval(x);
+                clearInterval(x);
+                this.props.removeElementFromList();
                 return;
             }
             this.setState({
