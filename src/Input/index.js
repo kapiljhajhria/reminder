@@ -30,14 +30,15 @@ class GetInput extends React.Component {
 
     // endTimeFromInput
 
-    removeElementFromList() {
+    async removeElementFromList() {
         console.log("filtering list")
         let copyList = [].concat(this.state.divList);
         copyList = copyList.filter((endTime) => (new Date(endTime).getTime() - Date.now()) > 0);
+
         this.setState({
             divList: copyList,
         })
-
+        alert('Timer Completed, Its ' + new Date(Date.now()).toLocaleTimeString() + " now");
     }
 
 

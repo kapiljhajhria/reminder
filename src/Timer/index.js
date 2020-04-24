@@ -27,7 +27,7 @@ class Timer extends React.Component {
                 console.log("timer ended")
                 clearInterval(x);
                 this.props.removeElementFromList();
-                return alert('Timer Completed, Its ' + new Date(Date.now()).toLocaleTimeString() + " now");
+                return 0;
             }
             this.setState({
                 countdown: days + "d "
