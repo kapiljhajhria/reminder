@@ -13,11 +13,11 @@ export default function Timer(props) {
         let hours = Math.floor((endTime / (1000 * 60 * 60)) % 24)
         let days = Math.floor((endTime / (1000 * 60 * 60 * 24)) % 24)
         // console.log(days + "d:" + hours + "h:" + minutes + "m:" + seconds+"s")
-        setCountDown(days + "d:" + hours + "h:" + minutes + "m:" + seconds+"s");
+        setCountDown(days + "d:" + hours + "h:" + minutes + "m:" + seconds + "s");
     }
 
     useEffect(() => {
-        intervalId = setInterval(()=>{
+        intervalId = setInterval(() => {
             getCountDownFromMilliseconds(endTimeInMilliseconds);
         }, 1000)
         // getCountDownFromMilliseconds(endTimeInMilliseconds)
