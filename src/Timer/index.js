@@ -8,10 +8,16 @@ export default function Timer(props) {
 
     function getCountDownFromMilliseconds(endTime) {
         endTime = endTime - new Date().getTime();
+
         let seconds = Math.floor((endTime / 1000) % 60)
         let minutes = Math.floor((endTime / (1000 * 60)) % 60)
         let hours = Math.floor((endTime / (1000 * 60 * 60)) % 24)
         let days = Math.floor((endTime / (1000 * 60 * 60 * 24)) % 24)
+        if (days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0) {
+            clearInterval(intervalId);
+            return;
+        }
+
         // console.log(days + "d:" + hours + "h:" + minutes + "m:" + seconds+"s")
         setCountDown(days + "d:" + hours + "h:" + minutes + "m:" + seconds + "s");
     }
