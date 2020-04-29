@@ -8,7 +8,14 @@ export default function GetInput(props) {
 
     let tempEndTime;
 
-
+    function filterEndTimesList(endTimeToRemove){
+        console.log("called parent function from child ofr key: " +endTimeToRemove);
+        let endTimesListCopy=endTimesList
+        endTimesListCopy=endTimesListCopy.filter((et)=>et!=endTimeToRemove);
+        alert("Timer Ended. Its now: "+endTimeToRemove)
+        console.log("len of endList now:"+endTimesListCopy.length)
+        // setEndTimesList(endTimesListCopy);
+    }
     return (
         <div className="add-reminder-cont">
             <div>
@@ -27,7 +34,7 @@ export default function GetInput(props) {
             </div>
             <div className="timersListCol">
                 {endTimesList.map((t) => (
-                    <Timer key={t} endTimeInMili={t}>
+                    <Timer key={t} endTimeInMili={t} onTimerEnd={()=>filterEndTimesList(t)}>
                         <div>
                             {t}</div>
                     </Timer>
