@@ -18,7 +18,7 @@ export default function Timer(props) {
             clearInterval(intervalId);
             setCountDown(days + "d:" + hours + "h:" + minutes + "m:" + seconds + "s");
             console.log("intervalId: "+intervalId)
-            props.onTimerEnd();
+            props.onTimerEnd(props.endTimeInMili);
             return;
         }// console.log(
         setCountDown(days + "d:" + hours + "h:" + minutes + "m:" + seconds + "s");
