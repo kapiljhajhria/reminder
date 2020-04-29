@@ -8,27 +8,27 @@ class Timer extends React.Component {
             fromTime: this.props.dateTime,
             countdown: 'Starting Timer',
 
-        }
+        };
+        this.intervalId=null;
     }
-
     startTimer (stringTime)  {
 
         console.log('string is :' + stringTime);
         let deadline = new Date(stringTime).getTime();
 
-        let x = setInterval(() => {
+        this.intervalId  = setInterval(() => {
             let now = new Date().getTime();
             let t = deadline - now;
             let days = Math.floor(t / (1000 * 60 * 60 * 24));
             let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             let minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
             let seconds = Math.floor((t % (1000 * 60)) / 1000);
-            if (days < 0 && hours < 0 && minutes < 0 && seconds < 0) {
+            if (t<=0) {
                 console.log("timer ended")
-                clearInterval(x);
+                clearInterval(this.intervalId);
                 this.props.removeElementFromList();
                 return 0;
-            }
+            }else
             this.setState({
                 countdown: days + "d "
                     + hours + "h " + minutes + "m " + seconds + "s ",
