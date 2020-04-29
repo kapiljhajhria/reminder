@@ -1,30 +1,17 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-.all-el{
+/*top container with input and button*/
+.add-reminder-cont{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
-    width: 100%;
-}
-.datetimepicker {
-    background-color: white;
-    margin: 8px;
-    border-radius: 8px;
-}
-
-.add-rem-btn {
-    border-radius: 4px;
-    margin-left: 10px;
-    font-weight: bold;
-    font-family: "Droid Sans";
-}
-
-.rem {
-    height: 20px;
-    justify-content: center;
-    /*width: 100%;*/
-    text-align: center;
-    margin: 5px;
-    color: #282c34;
-    display: flex;
     align-self: center;
+}
+.add-reminder-cont > div{
+    margin:8px;
+    padding: 8px;
 }
