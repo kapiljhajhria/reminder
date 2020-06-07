@@ -18,13 +18,12 @@ export default class GetInput extends React.Component  {
         console.log("called parent function from child ofr key: " +endTimeToRemove);
         console.log("endtimes list length is: "+this.state.endTimesList.length);
         console.log(this.state.endTimesList)
-        let endTimesListCopy=[].concat(this.state.endTimesList);
-        endTimesListCopy=[].concat(endTimesListCopy.filter((et)=>et!==endTimeToRemove));
-        console.log("len of endList now:"+endTimesListCopy.length)
+
+        console.log("len of endList now:"+this.state.endTimesList.length)
         this.setState({
-            endTimesList:endTimesListCopy
+            endTimesList:this.state.endTimesList.filter((et)=>et!==endTimeToRemove),
         })
-        alert("Timer Ended. Its now: "+endTimeToRemove)
+        // alert("Timer Ended. Its now: "+endTimeToRemove)
     }
     // useEffect(()=>{},[endTimesList])
     render() {
@@ -49,12 +48,10 @@ export default class GetInput extends React.Component  {
                     </button>
                 </div>
                 <div className="timersListCol">
-                    {this.state.endTimesList.map((t) => (
+                    {this.state.endTimesList.map((t,idx) => (
                         <Timer key={t} endTimeInMili={t} onTimerEnd={(t) =>
                             this.filterEndTimesList(t)
                         }>
-                            <div>
-                                {t}</div>
                         </Timer>
                     ))
                     }

@@ -6,8 +6,8 @@ export default function Timer(props) {
     const [countdown, setCountDown] = useState("");
     let intervalId;
 
-    function getCountDownFromMilliseconds(endTime) {
-        endTime = endTime - new Date().getTime();
+    function getCountDownFromMilliseconds() {
+        let endTime = endTimeInMilliseconds - new Date().getTime();
 
         let seconds = Math.floor((endTime / 1000) % 60)
         let minutes = Math.floor((endTime / (1000 * 60)) % 60)
@@ -25,9 +25,7 @@ export default function Timer(props) {
 // days + "d:" + hours + "h:" + minutes + "m:" + seconds+"s")
     }
     function startTimer(){
-        intervalId = setInterval(() => {
-            getCountDownFromMilliseconds(endTimeInMilliseconds);
-        }, 1000)
+        intervalId = setInterval(getCountDownFromMilliseconds, 1000)
     }
     useEffect(() => {
         startTimer();
